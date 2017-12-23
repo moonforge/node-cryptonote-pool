@@ -50,6 +50,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
   * Network hashrate
   * Pool hashrate
   * Each miners' individual stats (hashrate, shares submitted, pending balance, total paid, etc)
+  * Each miners' worker stats (hashrate, shares submitted)
   * Blocks found (pending, confirmed, and orphaned)
 * An easily extendable, responsive, light-weight front-end using API to display data
 * Worker login validation (make sure miners are using proper wallet addresses for mining)
@@ -64,15 +65,6 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 * IRC (freenode)
   * Support / general discussion join #monero: https://webchat.freenode.net/?channels=#monero
   * Development discussion join #monero-dev: https://webchat.freenode.net/?channels=#monero-dev
-
-
-#### Pools Using This Software
-
-* http://xminingpool.com
-* http://xmr.poolto.be
-* https://moneropool.com
-* http://monero.crypto-pool.fr
-* https://minexmr.com
 
 
 Usage
@@ -103,7 +95,7 @@ you are using - a good place to start with redis is [data persistence](http://re
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/zone117x/node-cryptonote-pool.git pool
+git clone https://github.com/moonforge/node-cryptonote-pool.git pool
 cd pool
 npm update
 ```
@@ -423,8 +415,7 @@ curl 127.0.0.1:18081/json_rpc -d '{"method":"getblockheaderbyheight","params":{"
 
 Donations
 ---------
-* BTC: `1667jMt7NTZDaC8WXAxtMYBR8DPWCVoU4d`
-* MRO: `48Y4SoUJM5L3YXBEfNQ8bFNsvTNsqcH5Rgq8RF7BwpgvTBj2xr7CmWVanaw7L4U9MnZ4AG7U6Pn1pBhfQhFyFZ1rL1efL8z`
+* MRO: `46SgREqRj3xc2Ex7ubwZ5UC64ifdbqSaUczgvYuB92921p9KKs3HLuMjaDV9fduZv3DvQQyqwz1rT2s4oEQvSVNhCqDcP2t`
 
 Credits
 ===
